@@ -1,0 +1,24 @@
+---
+version: "3.1"
+services:
+
+  postgres:
+    image: postgres:14
+    hostname: postgres
+    container_name: postgres
+    environment:
+      POSTGRES_DB: bank
+      POSTGRES_PASSWORD: secret
+      POSTGRES_USER: postgres
+    ports:
+      - 54321:5432
+
+#   rabbitmq:
+#     # management panel can be accessed with guest/guest
+#     image: rabbitmq:management
+#     container_name: rabbitmq
+#     hostname: rabbitmq
+#     restart: always
+#     ports:
+#       - 15672:15672
+#       - 5672:5672
