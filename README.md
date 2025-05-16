@@ -1,9 +1,9 @@
-# Cloud-Based Identity Verification System
+# Web-Based Identity Verification System
 
-This project implements a cloud-based identity verification service using two microservices: one for handling user request submissions and storing data securely, and another for verifying user identity through facial recognition APIs. The system uses RabbitMQ for task queuing and a cloud email service to notify users of their verification status.
+This project implements a web-based identity verification service using two microservices: one for handling user request submissions and storing data securely, and another for verifying user identity through facial recognition APIs. The system uses RabbitMQ for task queuing and a web email service to notify users of their verification status.
 
 ## Features
-- **User Request Submission:** Collects user details (email, national ID, IP address, and photos) and stores them in a cloud database.
+- **User Request Submission:** Collects user details (email, national ID, IP address, and photos) and stores them in a web database.
 - **Identity Verification:** Uses facial recognition and similarity APIs to compare user-submitted images.
 - **Task Queueing:** Utilizes RabbitMQ for task management between microservices.
 - **Email Notifications:** Sends status updates to users about their identity verification progress.
@@ -13,7 +13,7 @@ This project implements a cloud-based identity verification service using two mi
 
 
 ## Services Used
-- **Cloud Database:** Stores user information securely, with encrypted fields for sensitive data like the national ID.
+- **Web Database:** Stores user information securely, with encrypted fields for sensitive data like the national ID.
 - **Object Storage:** Stores user-submitted photos and enables retrieval for identity verification.
 - **RabbitMQ:** Manages task queues for processing identity verification requests.
 - **Facial Recognition & Similarity APIs:** Processes user images to verify identity.
@@ -32,6 +32,6 @@ This project implements a cloud-based identity verification service using two mi
 
 ## Installation & Setup
 1. Clone the repository.
-2. Set up your cloud services for database, object storage, RabbitMQ, facial recognition, and email notifications.
-3. Configure environment variables for your cloud service credentials.
+2. Set up your web services for database, object storage, RabbitMQ, facial recognition, and email notifications.
+3. Configure environment variables for your web service credentials.
 4. Deploy the microservices using Docker or your preferred deployment method.
